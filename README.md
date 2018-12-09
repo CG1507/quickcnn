@@ -14,7 +14,7 @@
 
 ## :memo: Todo
 
-## Related Projects
+## :mag: Related Projects
 
 ## :sunglasses: Authors
 
