@@ -1,6 +1,18 @@
-# QuickCNN
-![QuickCNN logo](https://github.com/CG1507/quickcnn/blob/master/images/logo.png)
+<h1 align="center">
+  <br>QuickCNN</br>
+  <img src="https://github.com/CG1507/quickcnn/blob/master/images/logo.png" alt="QuickCNN">
+</h1>
 
-Library for Convolutional Neural Network training, transfer learning and finetuning on Google colab.
+## Getting started
+
+## Prerequisites
+
+## Installation
+
+## Features
 
 ## Related Projects
+
+## Authors
+
+## Acknowledgments
