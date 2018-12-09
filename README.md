@@ -6,11 +6,13 @@ QuickCNN is high-level library written in Python, and backed by the [Keras](http
 
 #### Go for QuickCNN if you are thinking of:
 
-- ConvNet training for any size of dataset on GPU.
+- ConvNet training for Image classification on any size of dataset with GPU.
 
 - Transfer Learning, Finetuning, and Scratch Training of Deep ConvNet models.
 
 - Babysitting the pretrained ConvNet architectures.
+
+- Training SVM on ConvNet features from particular layer. 
 
 #### Why Google-Colaboratory:question:
 
