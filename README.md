@@ -6,7 +6,7 @@ QuickCNN is high-level library written in Python, and backed by the [Keras](http
 
 #### Why Google-Colaboratory:question:
 
-Colab provides free compute power on cloud with following specs:
+Colab provides :free: compute power on cloud with following specs:
 
 - GPU: 1xTesla K80 , compute 3.7, having 2496 CUDA cores , 12GB GDDR5 VRAM
 
