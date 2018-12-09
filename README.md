@@ -12,7 +12,9 @@ QuickCNN is high-level library written in Python, and backed by the [Keras](http
 
 - Babysitting the pretrained ConvNet architectures.
 
-- Training SVM on ConvNet features from particular layer. 
+- Training SVM on ConvNet features from particular layer.
+
+- Colab for training Deep CNN models.
 
 #### Why Google-Colaboratory:question:
 
