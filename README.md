@@ -4,18 +4,18 @@
   <img src="https://github.com/CG1507/quickcnn/blob/master/images/logo.png" alt="QuickCNN">
 </h1>
 
-## Getting started
+## :running: Getting started
 
-## Prerequisites
+## :ocean: Prerequisites
 
-## Installation
+## :seedling: Installation
 
-## Features
+## :gem: Features
 
-## Todo
+## :memo: Todo
 
 ## Related Projects
 
-## Authors
+## :sunglasses: Authors
 
-## Acknowledgments
+## :green_heart: Acknowledgments
