@@ -133,7 +133,31 @@ from quickcnn import retrain
 ```
 
 ```
-model [default=None]: If model is None, then it will ask you to pick pretrained model in an interactive way.
+model [default=None]: If model is None, then it will ask you to pick pretrained model in an 
+                      interactive way. For custom keras model, you can pass keras [Model] object.
+target_size [default=None]: If you model is None then it is not required(None). For custom model it is 
+                            required to pass, but
+train_mode
+train_dir_name
+val_dir_name
+full_data_dir_name
+fraction
+epoch
+batch_size
+initial_lrate
+exp_drop
+dropout
+model_save_period
+dense_layer
+cpu_workers
+preserve_imagenet_classes
+use_tensorboard
+histogram_freq
+write_grads
+write_images
+initial_epoch
+class_mapping
+name
 ```
 
 ```python
