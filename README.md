@@ -132,6 +132,14 @@ sudo pip3 install quickcnn
 from quickcnn import retrain
 ```
 
+| Arguments  | Description  | Default   |
+| :---:       |     :---:    |    :---:   |
+| model | If model is None, then it will ask you to pick pretrained model in an interactive way. <br> For custom keras model, you can pass keras [Model] object.| None |
+| target_size | If you model is None then it is not required(None). <br> For custom model it is required to pass as tuple, if model doesn't have batch_input_shape with 4 dimensions (batch_size, width, height, channel). <br> e.g. target_size=(224, 224) | None |
+| train_mode | It is always True for transfer-learning, training, finetuning and bottleneck features training on SVM. <br> False when you only want to predict using model. | True |
+| train_dir_name | Only allow if you have splitted data in train/validation set. <br> If None, then full_data_dir_name must not be None. <br> for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name/train") <br> for locally: path to directory ("/home/dell/Desktop/Food image data/train_data") | None |
+| val_dir_name | Only allow if you have splitted data in train/validation set. <br> If None, then full_data_dir_name must not be None. <br> for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name/train") <br> for locally: path to directory ("/home/dell/Desktop/Food image data/train_data") | None |
+| full_data_dir_name | Only allow if you do not have splitted data. <br> for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name") <br> for locally: path to directory ("/home/dell/Desktop/Food image data") | None |
 ```
 model [default=None]: If model is None, then it will ask you to pick pretrained model in an 
                       interactive way. For custom keras model, you can pass keras [Model] object.
