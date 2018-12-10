@@ -70,7 +70,14 @@ sudo pip3 install quickcnn
 
 1. **Upload Data**
 
-  - **Colab:** Upload your dataset on Google Drive in following structure.
+  - **Colab:** Upload your dataset on Google Drive in either of following structure. 
+  
+  - **Locally:** Get your dataset in either of the following structure. 
+  
+  > NOTE: If you don not want to change original data folder structure, then make a copy of your dataset, because we will split dataset in train/validation set.
+
+  
+  If you **have splitted data** in train/validation set:
   
   ```
     ├── "dataset_name"                   
@@ -99,9 +106,25 @@ sudo pip3 install quickcnn
     |   |   |   ├── .....
     |   |   ├── .....
   ```
-  
-  - **Locally:** 
 
+ If you **do not have splitted data** in train/validation set:
+  
+  ```
+    ├── "dataset_name"                   
+    |   ├── class_1_name
+    |   |   ├── image_1
+    |   |   ├── image_2
+    |   |   ├── image_X
+    |   |   ├── .....
+    |   ├── class_2_name
+    |   |   ├── image_1
+    |   |   ├── image_2
+    |   |   ├── image_X
+    |   |   ├── .....
+    |   ├── .....
+  ```
+
+ 
 ## :memo: Todo
 
 ## :mag: Related Projects
