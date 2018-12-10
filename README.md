@@ -126,7 +126,19 @@ sudo pip3 install quickcnn
     |   ├── .....
   ```
 
-#### 2. 
+#### 2. Main call
+
+```python
+from quickcnn import retrain
+```
+
+```
+model [default=None]: If model is None, then it will ask you to pick pretrained model in an interactive way.
+```
+
+```python
+convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_data',val_dir_name = 'Food image data/val_data', preserve_imagenet_classes=False, epoch=1, dropout=0.0, dense_layer=1, use_tensorboard=True, histogram_freq=0, batch_size=32)
+```
  
 ## :memo: Todo
 
