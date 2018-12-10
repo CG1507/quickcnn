@@ -9,13 +9,9 @@ QuickCNN is high-level library written in Python, and backed by the [Keras](http
 It gives you massive computing power with following specification: :free:
 
 - GPU: 1xTesla K80, compute 3.7, having 2496 CUDA cores, 12GB GDDR5 VRAM
-
 - CPU: 1xsingle core hyper threaded Xeon Processors @2.3Ghz i.e(1 core, 2 threads)
-
 - RAM: ~12.6 GB Available
-
 - Disk: ~33 GB Available
-
 - Do not require to install any prerequisites packages
 
 #### Go for QuickCNN, if you:
@@ -163,6 +159,10 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
 ```
  
 ## :memo: Todo
+
+- [ ] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
 
 ## :mag: Related Projects
 
