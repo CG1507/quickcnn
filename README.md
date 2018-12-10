@@ -95,7 +95,7 @@ sudo pip3 install quickcnn
     |   |   |   ├── image_X
     |   |   |   ├── .....
     |   |   ├── .....
-    |   ├── val
+    |   ├── validation
     |   |   ├── class_1_name
     |   |   |   ├── image_1
     |   |   |   ├── image_2
@@ -135,12 +135,22 @@ from quickcnn import retrain
 ```
 model [default=None]: If model is None, then it will ask you to pick pretrained model in an 
                       interactive way. For custom keras model, you can pass keras [Model] object.
+
 target_size [default=None]: If you model is None then it is not required(None). For custom model it is 
-                            required to pass, but
-train_mode
-train_dir_name
-val_dir_name
-full_data_dir_name
+                            required to pass as tuple, if model doesn't have batch_input_shape with 4 
+                            dimensions (batch_size, width, height, channel). e.g. target_size=(224, 224) 
+
+train_mode [default=True]: It is always True for transfer-learning, training, finetuning and bottleneck 
+                           features training on SVM. False when you only want to predict using model.
+
+Check how to upload data section above to confirm which argumet will be used?
+   - train_dir_name [default=None]: Only allow if you are having splitted data in train/validation set.
+                                   If None, then full_data_dir_name must not be None.
+
+   - val_dir_name [default=None]: If None, then full_data_dir_name must not be None.
+
+   - full_data_dir_name [default=None]:
+
 fraction
 epoch
 batch_size
