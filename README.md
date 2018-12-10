@@ -72,6 +72,34 @@ sudo pip3 install quickcnn
 
   - **Colab:** Upload your dataset on Google Drive in following structure.
   
+  ```
+    ├── "dataset_name"                   
+    |   ├── train
+    |   |   ├── class_1_name
+    |   |   |   ├── image_1
+    |   |   |   ├── image_2
+    |   |   |   ├── image_X
+    |   |   |   ├── .....
+    |   |   ├── class_2_name
+    |   |   |   ├── image_1
+    |   |   |   ├── image_2
+    |   |   |   ├── image_X
+    |   |   |   ├── .....
+    |   |   ├── .....
+    |   ├── val
+    |   |   ├── class_1_name
+    |   |   |   ├── image_1
+    |   |   |   ├── image_2
+    |   |   |   ├── image_X
+    |   |   |   ├── .....
+    |   |   ├── class_2_name
+    |   |   |   ├── image_1
+    |   |   |   ├── image_2
+    |   |   |   ├── image_X
+    |   |   |   ├── .....
+    |   |   ├── .....
+  ```
+  
   - **Locally:** 
 
 ## :memo: Todo
