@@ -140,60 +140,24 @@ from quickcnn import retrain
 | train_dir_name | Only allow if you have splitted data in train/validation set. <br> If None, then full_data_dir_name must not be None. <br> for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name/train") <br> for locally: path to directory ("/home/dell/Desktop/Food image data/train_data") | None |
 | val_dir_name | Only allow if you have splitted data in train/validation set. <br> If None, then full_data_dir_name must not be None. <br> for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name/train") <br> for locally: path to directory ("/home/dell/Desktop/Food image data/train_data") | None |
 | full_data_dir_name | Only allow if you do not have splitted data. <br> for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name") <br> for locally: path to directory ("/home/dell/Desktop/Food image data") | None |
-```
-model [default=None]: If model is None, then it will ask you to pick pretrained model in an 
-                      interactive way. For custom keras model, you can pass keras [Model] object.
+| fraction | If full_data_dir_name is not None then it will divide your data in train/validation set. <br> default=80 means 80% images in training set and 20% in validation set. | 80 |
+| epoch | Training epoch in any of the learning process except SVM. | 20 |
+| batch_size | batch_size in training. <br> This is very important argument to GPU utilization. <br> (Colab: Check utlization in Manage Session) <br>If it is underutilized then increase the batch-size, and vice-versa. | 64 |
+| initial_lrate | Do not apply in transfer learning | 0.01 |
+| exp_drop | Every epoch: LR updated by: initial_lrate * e^(-exp_drop * epoch) | 0.3 |
+| dropout | if 0.0 then do not use dropout layer with newly added FC layer for training data, else use with given rate. | 0. |
+| model_save_period | model will be saved (with weights) after given epoch period | 1 |
+| dense_layer | Add given number of new FC layer for training data | 1 |
+| cpu_workers | if cpu is underutilized then increase number, else vice-versa. <br> It helps in data augmentation. | 5 |
+| preserve_imagenet_classes | If you choose pretrained model, then save model with imagenet classes output. | False |
+| use_tensorboard | Allow tensorboard to visualize loss, accuracy and graph | False |
+| histogram_freq | Write histograms, distribution, and images after given epoch frequency. <br> If histogram_freq is 0, then it won't write histograms, distribution, and images. <br> Writing it frequently slow down your training. | 1 |
+| write_grads | Write gradents in tensorboard | True |
+| write_images | Write images in tensorboard | True |
+| initial_epoch | it helps to resume the training from the epoch, where it stopped | 0 |
+| class_mapping | if train_mode is False and model has classes other than ImageNet, then pass class_mapping. <br> class_mapping can be dictionary or file_path to class_mapping.json. | None |
+| name | name of model | "custom_convnet" |
 
-target_size [default=None]: If you model is None then it is not required(None). For custom model it is 
-                            required to pass as tuple, if model doesn't have batch_input_shape with 4 
-                            dimensions (batch_size, width, height, channel). e.g. target_size=(224, 224) 
-
-train_mode [default=True]: It is always True for transfer-learning, training, finetuning and bottleneck 
-                           features training on SVM. False when you only want to predict using model.
-
-Check your data format above to use follwing arguments:
-   for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name/train")
-   for locally: path to directory ("/home/dell/Desktop/Food image data/train_data")
-   - train_dir_name [default=None]: Only allow if you have splitted data in train/validation set.
-                                    If None, then full_data_dir_name must not be None.
-
-   - val_dir_name [default=None]: Only allow if you have splitted data in train/validation set.
-                                  If None, then full_data_dir_name must not be None.
-
-   - full_data_dir_name [default=None]: Only allow if you do not have splitted data.
-
-fraction [deafult=80]: If full_data_dir_name is not None then it will divide your data in train/validation set.
-                       default=80 means 80% images in training set and 20% in validation set.
-
-epoch [default=20]: Training epoch in any of the learning process except SVM.
-
-batch_size [defalut=64]: batch_size in training.
-                         This is very important argument to GPU utilization. 
-                         (Colab: Check utlization in Manage Session)
-                         If it is underutilized then increase the batch-size, and vice-versa.
-
-Learning Rate Decay handling
-    - initial_lrate [default=0.01]: 
-    
-    - exp_drop [defalut=0.3]:
-
-dropout
-model_save_period
-dense_layer
-cpu_workers
-preserve_imagenet_classes
-use_tensorboard
-histogram_freq
-write_grads
-write_images
-initial_epoch
-class_mapping
-name
-```
-
-```python
-convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_data',val_dir_name = 'Food image data/val_data', preserve_imagenet_classes=False, epoch=1, dropout=0.0, dense_layer=1, use_tensorboard=True, histogram_freq=0, batch_size=32)
-```
  
 ## :memo: Todo
 
