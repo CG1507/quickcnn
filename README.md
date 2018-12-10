@@ -68,11 +68,11 @@ sudo pip3 install quickcnn
 
 ## :running: Getting started
 
-1. **Upload Data**
+#### 1. **Upload Data**
 
    - **Colab:** Upload your dataset on Google Drive in either of following structure. 
    
-     > - **NOTE:** Do not upload your dataset in colab-workspace(~ 33 GB), because when session expires, it will clean all the files in workspace. Session expires after 12 hours, and idle time for session is 90 minutes.
+     > - **NOTE:** Do not upload your dataset in colab-workspace(~ 33 GB), because when session expires, it will clean all the files in workspace. Session expires after 12 hours, and idle time for session is 90 minutes. It may also interrupt the VM in worst case, so you have to re-upload your dataset, and which is not good idea :grimacing:.
   
    - **Locally:** Get your dataset in either of the following structure. 
   
@@ -126,7 +126,7 @@ sudo pip3 install quickcnn
     |   ├── .....
   ```
 
-2. 
+#### 2. 
  
 ## :memo: Todo
 
