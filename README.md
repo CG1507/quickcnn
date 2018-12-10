@@ -152,16 +152,14 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
  
 ## :memo: Todo
 
-- [ ] Tensorboard support 
-- [ ] 
-- [ ] 
+- [ ] Tensorboard support
 - [ ] Restructure the code as per stanadrd
 
 ## :mag: Related Projects
 
 ## :sunglasses: Authors
 
-[<img src="https://avatars3.githubusercontent.com/u/24426731?s=460&v=4" width="200" height="200" alt="Ghanshyam_Chodavadiya">](https://github.com/CG1507)
+[<img src="https://avatars3.githubusercontent.com/u/24426731?s=460&v=4" width="70" height="70" alt="Ghanshyam_Chodavadiya">](https://github.com/CG1507)
 
 ## :green_heart: Acknowledgments
 
