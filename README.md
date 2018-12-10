@@ -40,13 +40,13 @@ It gives you massive computing power with following specification: :free:
 
 ## :seedling: Installation
 
-- Google-Colaboratory
+- **Google-Colaboratory**
 
 ```
 !pip install -q quickcnn
 ```
 
-- Locally
+- **Locally**
 
 ```
 sudo pip3 install quickcnn
