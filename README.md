@@ -26,6 +26,8 @@ It gives you massive computing power with following specification: :free:
 
 ## :running: Getting started
 
+Main idea of QuickCNN is to apply
+
 ## :ocean: Prerequisites
 
 ## :seedling: Installation
