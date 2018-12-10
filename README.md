@@ -4,14 +4,6 @@
 
 QuickCNN is high-level library written in Python, and backed by the [Keras](https://github.com/keras-team/keras), [TensorFlow](https://github.com/tensorflow/tensorflow), and [Scikit-learn](https://github.com/scikit-learn/scikit-learn) libraries. It was developed to exercise faster experimentation with Convolutional Neural Networks(CNN). Majorly, it is intended to use the [Google-Colaboratory](https://colab.research.google.com/) to quickly play with the ConvNet architectures. It also allow to train on your local system.
 
-#### Go for QuickCNN, if you:
-
-- don't have GPU, and want to train Deep ConvNet model on any size of data.
-
-- want to apply transfer learning, finetuning, and scratch training on Deep ConvNet models.
-
-- want to use pretrained ConvNet architectures for above learning process.
-
 #### Why Google-Colaboratory:question:
 
 It gives you massive computing power with following specification: :free:
@@ -23,6 +15,14 @@ It gives you massive computing power with following specification: :free:
 - RAM: ~12.6 GB Available
 
 - Disk: ~33 GB Available
+
+#### Go for QuickCNN, if you:
+
+- don't have GPU, and want to train Deep ConvNet model on any size of data.
+
+- want to apply transfer learning, finetuning, and scratch training on Deep ConvNet models.
+
+- want to use pretrained ConvNet architectures for above learning process.
 
 ## :running: Getting started
 
