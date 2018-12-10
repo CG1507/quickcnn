@@ -26,10 +26,9 @@ It gives you massive computing power with following specification: :free:
 
 - want to use pretrained ConvNet architectures for above learning process.
 
-
 > Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works as an **interactive tool** for transfer learning, finetuning, and scratch training with custom datasets. It has pretrained model zoo and also works with your custom keras model architecture.
 
-QuickCNN works in two different environment:
+**QuickCNN works in two different environment:**
 
 - [Google-Colaboratory](https://colab.research.google.com/) (Recommended)
 
@@ -68,8 +67,6 @@ sudo pip3 install quickcnn
 ## :gem: Features
 
 ## :running: Getting started
-
-#### Guide for QuickCNN:
 
 1. **Upload Data**
 
