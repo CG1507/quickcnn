@@ -16,6 +16,8 @@ It gives you massive computing power with following specification: :free:
 
 - Disk: ~33 GB Available
 
+- Do not require to install any prerequisites packages
+
 #### Go for QuickCNN, if you:
 
 - don't have GPU, and want to train Deep ConvNet model on any size of data.
@@ -24,21 +26,54 @@ It gives you massive computing power with following specification: :free:
 
 - want to use pretrained ConvNet architectures for above learning process.
 
-## :running: Getting started
 
-Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works as an **interactive tool** for transfer learning, finetuning, and scratch training with custom datasets. It has pretrained model zoo and also works with your custom keras architecture. QuickCNN works in two different environment:
+Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works as an **interactive tool** for transfer learning, finetuning, and scratch training with custom datasets. It has pretrained model zoo and also works with your custom keras model architecture. QuickCNN works in two different environment:
 
 - [Google-Colaboratory](https://colab.research.google.com/) (Recommended)
 
 - Locally
 
+## :ocean: Prerequisites (Only for working locally)
 
+- Keras
 
-## :ocean: Prerequisites
+- Tensorflow
+
+- sklearn
+
+- cv2
+
+- matplotlib
+
+- pandas
+
+> **Google-Colaboratory**: No such prerequisites. Already installed on Google-Colaboratory VM.
 
 ## :seedling: Installation
 
+- Google-Colaboratory
+
+```
+!pip install -q quickcnn
+```
+
+- Locally
+
+```
+sudo pip3 install quickcnn
+```
+
 ## :gem: Features
+
+## :running: Getting started
+
+#### Guide for QuickCNN:
+
+1. **Upload Data**
+
+  - **Colab:** Upload your dataset on Google Drive in following structure.
+  
+  - **Locally:** 
 
 ## :memo: Todo
 
