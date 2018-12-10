@@ -26,11 +26,13 @@ It gives you massive computing power with following specification: :free:
 
 ## :running: Getting started
 
-Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. **QuickCNN works for two platform:**
+Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works as an **interactive tool** for transfer learning, finetuning, and scratch training with custom datasets. It has pretrained model zoo and also works with your custom keras architecture. QuickCNN works in two different environment:
 
-- Google-Colaboratory (Recommended)
+- [Google-Colaboratory](https://colab.research.google.com/) (Recommended)
 
 - Locally
+
+
 
 ## :ocean: Prerequisites
 
