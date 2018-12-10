@@ -26,7 +26,7 @@ It gives you massive computing power with following specification: :free:
 
 ## :running: Getting started
 
-Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works for two platform:
+Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. **QuickCNN works for two platform:**
 
 - Google-Colaboratory (Recommended)
 
