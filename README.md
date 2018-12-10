@@ -143,19 +143,32 @@ target_size [default=None]: If you model is None then it is not required(None). 
 train_mode [default=True]: It is always True for transfer-learning, training, finetuning and bottleneck 
                            features training on SVM. False when you only want to predict using model.
 
-Check how to upload data section above to confirm which argumet will be used?
-   - train_dir_name [default=None]: Only allow if you are having splitted data in train/validation set.
-                                   If None, then full_data_dir_name must not be None.
+Check your data format above to use follwing arguments:
+   for colab: only directory-name (Nested directory in Google-Drive then pass as path: "datset_name/train")
+   for locally: path to directory ("/home/dell/Desktop/Food image data/train_data")
+   - train_dir_name [default=None]: Only allow if you have splitted data in train/validation set.
+                                    If None, then full_data_dir_name must not be None.
 
-   - val_dir_name [default=None]: If None, then full_data_dir_name must not be None.
+   - val_dir_name [default=None]: Only allow if you have splitted data in train/validation set.
+                                  If None, then full_data_dir_name must not be None.
 
-   - full_data_dir_name [default=None]:
+   - full_data_dir_name [default=None]: Only allow if you do not have splitted data.
 
-fraction
-epoch
-batch_size
-initial_lrate
-exp_drop
+fraction [deafult=80]: If full_data_dir_name is not None then it will divide your data in train/validation set.
+                       default=80 means 80% images in training set and 20% in validation set.
+
+epoch [default=20]: Training epoch in any of the learning process except SVM.
+
+batch_size [defalut=64]: batch_size in training.
+                         This is very important argument to GPU utilization. 
+                         (Colab: Check utlization in Manage Session)
+                         If it is underutilized then increase the batch-size, and vice-versa.
+
+Learning Rate Decay handling
+    - initial_lrate [default=0.01]: 
+    
+    - exp_drop [defalut=0.3]:
+
 dropout
 model_save_period
 dense_layer
