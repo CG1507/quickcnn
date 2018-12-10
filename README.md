@@ -158,6 +158,9 @@ from quickcnn import retrain
 | class_mapping | if train_mode is False and model has classes other than ImageNet, then pass class_mapping. <br> class_mapping can be dictionary or file_path to class_mapping.json. | None |
 | name | name of model | "custom_convnet" |
 
+```
+convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_data',val_dir_name = 'Food image data/val_data', preserve_imagenet_classes=False, epoch=1, dropout=0.0, dense_layer=1, use_tensorboard=True, histogram_freq=0, batch_size=32)
+```
  
 ## :memo: Todo
 
@@ -165,4 +168,8 @@ from quickcnn import retrain
 
 ## :sunglasses: Authors
 
+[<img src="https://avatars3.githubusercontent.com/u/24426731?s=460&v=4" width="200" height="200" alt="Ghanshyam_Chodavadiya">](https://github.com/CG1507)
+
 ## :green_heart: Acknowledgments
+
+[tensorboardcolab](https://github.com/taomanwai/tensorboardcolab)
