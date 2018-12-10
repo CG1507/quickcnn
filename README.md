@@ -17,9 +17,7 @@ It gives you massive computing power with following specification: :free:
 #### Go for QuickCNN, if you:
 
 - don't have GPU, and want to train Deep ConvNet model on any size of data.
-
 - want to apply transfer learning, finetuning, and scratch training on Deep ConvNet models.
-
 - want to use pretrained ConvNet architectures for above learning process.
 
 > Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works as an **interactive tool** for transfer learning, finetuning, and scratch training with custom datasets. It has pretrained model zoo and also works with your custom keras model architecture.
@@ -27,21 +25,15 @@ It gives you massive computing power with following specification: :free:
 **QuickCNN works in two different environment:**
 
 - [Google-Colaboratory](https://colab.research.google.com/) (Recommended)
-
 - Locally
 
 ## :ocean: Prerequisites (Only for working locally)
 
 - Keras
-
 - Tensorflow
-
 - sklearn
-
 - cv2
-
 - matplotlib
-
 - pandas
 
 > **Google-Colaboratory**: No such prerequisites. Already installed on Google-Colaboratory VM.
@@ -160,9 +152,10 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
  
 ## :memo: Todo
 
-- [ ] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [ ] Tensorboard support 
+- [ ] 
+- [ ] 
+- [ ] Restructure the code as per stanadrd
 
 ## :mag: Related Projects
 
