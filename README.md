@@ -167,7 +167,7 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
 - [ ] confusion-matrix
 - [ ] Evaluate Generator
 - [ ] Plot tp, fp, tn, fn images with result and confidence
-- [ ] Restructure the code as per stanadrd.
+- [ ] Restructure the code as per coding stanadrd. :grimacing:
 
 ## :mag: Related Projects
 
