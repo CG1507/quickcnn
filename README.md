@@ -116,9 +116,13 @@ sudo pip3 install quickcnn
 
 #### 2. Main call
 
+QuickCNN is working in interactive mode, and ```retrain``` is main import of library.
+
 ```python
 from quickcnn import retrain
 ```
+
+Create an obect of ```retrain.Retrain``` class for applying any learning process to pretrained or custom model, and also for prediction. Here is the list for the arguments of ```Retrain``` class:
 
 | Arguments  | Description  | Default   |
 | :---:       |     :---:    |    :---:   |
@@ -152,10 +156,13 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
  
 ## :memo: Todo
 
-- [ ] Tensorboard support
-- [ ] Restructure the code as per stanadrd
+- [x] Tensorboard support.
+- [ ] Obect detection training.
+- [ ] Restructure the code as per stanadrd.
 
 ## :mag: Related Projects
+
+- [ConvNet-Zoo](https://github.com/CG1507/ConvNet-Zoo)
 
 ## :sunglasses: Authors
 
@@ -163,4 +170,4 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
 
 ## :green_heart: Acknowledgments
 
-[tensorboardcolab](https://github.com/taomanwai/tensorboardcolab)
+:thumbsup: [tensorboardcolab](https://github.com/taomanwai/tensorboardcolab)
