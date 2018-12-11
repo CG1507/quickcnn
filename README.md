@@ -56,7 +56,7 @@ sudo pip3 install quickcnn
 
 - Model can predict ImageNet class and custom class altogether in single computation per image.
 - Visualize training and validation graphs in Tensorboard
-- Histogram, Distribution and cnv filter images in Tensorboard
+- Histogram, Distribution and convolutional filter images in Tensorboard
 - Prediction of images and plot images with classes.
 
 ## :running: Getting started
