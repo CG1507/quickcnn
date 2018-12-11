@@ -4,6 +4,8 @@
 
 QuickCNN is high-level library written in Python, and backed by the [Keras](https://github.com/keras-team/keras), [TensorFlow](https://github.com/tensorflow/tensorflow), and [Scikit-learn](https://github.com/scikit-learn/scikit-learn) libraries. It was developed to exercise faster experimentation with Convolutional Neural Networks(CNN). Majorly, it is intended to use the [Google-Colaboratory](https://colab.research.google.com/) to quickly play with the ConvNet architectures. It also allow to train on your local system.
 
+Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works as an **interactive tool** for transfer learning, finetuning, and scratch training with custom datasets. It has pretrained model zoo and also works with your custom keras model architecture.
+
 #### Why Google-Colaboratory:question:
 
 It gives you massive computing power with following specification: :free:
@@ -19,8 +21,6 @@ It gives you massive computing power with following specification: :free:
 - don't have GPU, and want to train Deep ConvNet model on any size of data.
 - want to apply transfer learning, finetuning, and scratch training on Deep ConvNet models.
 - want to use pretrained ConvNet architectures for above learning process.
-
-> Main idea of QuickCNN is to train deep ConvNet without diving into architectural details. QuickCNN works as an **interactive tool** for transfer learning, finetuning, and scratch training with custom datasets. It has pretrained model zoo and also works with your custom keras model architecture.
 
 **QuickCNN works in two different environment:**
 
@@ -43,7 +43,7 @@ It gives you massive computing power with following specification: :free:
 - **Google-Colaboratory**
 
 ```
-!pip install -q quickcnn
+!pip install quickcnn
 ```
 
 - **Locally**
@@ -53,6 +53,11 @@ sudo pip3 install quickcnn
 ```
 
 ## :gem: Features
+
+- Model can predict ImageNet class and custom class altogether in single computation per image.
+- Visualize training and validation graphs in Tensorboard
+- Histogram, Distribution and cnv filter images in Tensorboard
+- Prediction of images and plot images with classes.
 
 ## :running: Getting started
 
