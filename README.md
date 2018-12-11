@@ -163,6 +163,10 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
 
 - [x] Tensorboard support.
 - [ ] Obect detection training.
+- [ ] T-SNE for layer's feature embeddings
+- [ ] confusion-matrix
+- [ ] Evaluate Generator
+- [ ] Plot tp, fp, tn, fn images with result and confidence
 - [ ] Restructure the code as per stanadrd.
 
 ## :mag: Related Projects
