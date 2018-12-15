@@ -59,6 +59,7 @@ sudo pip3 install quickcnn
 - Histogram, Distribution and convolutional filter images in Tensorboard
 - Prediction of images and plot images with classes.
 - Tensorboard support in Colab.
+- 13 Pretrained architecture with benchmark results. [details](https://keras.io/applications/#documentation-for-individual-models)
 
 ## :running: Getting started
 
@@ -158,12 +159,6 @@ Create an obect of ```retrain.Retrain``` class for applying any learning process
 
 ***NOTE: QuickCNN is saving class-mapping.json and all model\*.hdf5 in your Google-Drive, so for re-using these files in arguments like ```model``` & ```class_mapping```, you have to append 'gdrive/My Drive/[Google-Drive path].***
 
-## :octocat: Examples:
-
-```python
-convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_data',val_dir_name = 'Food image data/val_data', preserve_imagenet_classes=False, epoch=1, dropout=0.0, dense_layer=1, use_tensorboard=True, histogram_freq=0, batch_size=32)
-```
-
 ## :bullettrain_front: Training Mode:
 
 There is four case with **size** of dataset and **similarity** with pretrained model's dataset.
@@ -194,6 +189,17 @@ There is two ways for this case.
 
 ```training_mode=4 in QuickCNN (Scratch training)```
 As we have big data, so we can perform full training, and it is useful to initialize the model with pretrained weights.
+
+## :octocat: Examples:
+
+If you want to train any of 13 available pretrained models, then do [step-1](https://github.com/CG1507/quickcnn#1-upload-data) and follow this code-snippet.
+
+```python
+convnet = retrain.Retrain(train_dir_name ='Food image data/train_data',
+                          val_dir_name = 'Food image data/val_data', 
+                          preserve_imagenet_classes=False, 
+                          epoch=20, use_tensorboard=True, histogram_freq=0, batch_size=32)
+```
 
 ## :memo: Todo
 
