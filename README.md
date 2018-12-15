@@ -161,7 +161,7 @@ Create an obect of ```retrain.Retrain``` class for applying any learning process
 
 **NOTE:** QuickCNN is saving **class-mapping.json** and all **model\*.hdf5** in your Google-Drive, so for re-using these files in arguments like ```model``` & ```class_mapping```, you have to append **'gdrive/My Drive/[Google-Drive path]**
 
-**Do always:** If you want to train model one after another, then after one training process **Runtime > Reset all runtimes...**, else it will give an error in tensorboard writing. If you inturrept the training and want to access tensorboard events then before reset, copy log folder from colab-workspace.
+**Do always:** If you want to train model one after another, then after one training process **Runtime > Reset all runtimes...**, else it will give an error in tensorboard writing. If you inturrept the training and want to access tensorboard events, then before reset, copy log folder from colab-workspace.
 
 ## :bullettrain_front: Training Mode:
 
