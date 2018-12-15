@@ -209,11 +209,23 @@ For prediction after completing any of training process. If you are working in c
 For ```preserve_imagenet_classes=True```, it also predict ImageNet class label.
 
 ```python
-#test_data folder having mixed class images.
+# test_data folder having mixed class images.
 convnet.predict('test_data')
+print(convnet.results)
 ```
 
-For custom model or incomplete trained model 
+For extracting features from layer:
+
+```python
+convnet = retrain.Retrain(train_dir_name ='Food image data/train_data',
+                          val_dir_name = 'Food image data/val_data')
+
+# Bottleneck features
+print(convnet.X)
+
+# Image label
+print(convnet.Y)
+```
 
 ## :memo: Todo
 
