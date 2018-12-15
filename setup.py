@@ -4,7 +4,7 @@ long_description="Main idea of QuickCNN is to train deep ConvNet without diving 
 
 setuptools.setup(
 	name="quickcnn",
-	version="0.0.11",
+	version="0.0.12",
 	author="Ghanshyam Chodavadiya",
 	author_email="g8ghanshym@gmail.com",
 	description="ConvNet architectures on Google-Colaboratory",
