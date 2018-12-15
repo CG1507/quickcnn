@@ -251,6 +251,7 @@ print(convnet.results)
 
 ## :mag: Related Projects
 
+- [ConvNet-Vis](https://github.com/CG1507/ConvNet-Vis)
 - [ConvNet-Zoo](https://github.com/CG1507/ConvNet-Zoo)
 
 ## :sunglasses: Authors
