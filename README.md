@@ -199,7 +199,7 @@ As we have big data, so we can perform full training, and it is useful to initia
 If you want to train any of 13 available pretrained models, then do [step-1](https://github.com/CG1507/quickcnn#1-upload-data) and follow this code-snippet.
 
 ```python
-convnet = retrain.Retrain(train_dir_name ='Food image data/train_data',
+convnet = retrain.Retrain(train_dir_name = 'Food image data/train_data',
                           val_dir_name = 'Food image data/val_data', 
                           preserve_imagenet_classes=False, 
                           epoch=20, use_tensorboard=True, histogram_freq=0, batch_size=32)
