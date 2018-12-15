@@ -700,10 +700,11 @@ class Retrain():
 				break
 			no += 1
 
-		X = np.array(X)
-		Y = np.array(Y)
-		self.clf = SVC()
-		self.clf.fit(X, Y)
+		self.X = np.array(X)
+		self.Y = np.array(Y)
+		if take_y_n("Do you want to train SVM on extracted features [Y/N]: ")
+			self.clf = SVC()
+			self.clf.fit(self.X, self.Y)
 
 	def predict(self, path):
 		if self.is_colab:
