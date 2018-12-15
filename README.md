@@ -157,7 +157,11 @@ Create an obect of ```retrain.Retrain``` class for applying any learning process
 | **class_mapping** | • if train_mode is False and model has classes other than ImageNet, then pass class_mapping. <br> • class_mapping can be dictionary or file_path to class_mapping.json. | None |
 | **name** | • name of model | "custom_convnet" |
 
-***NOTE: QuickCNN is saving class-mapping.json and all model\*.hdf5 in your Google-Drive, so for re-using these files in arguments like ```model``` & ```class_mapping```, you have to append 'gdrive/My Drive/[Google-Drive path].***
+<h3 align="center">"In colab, results are saved in Google Drive finetune ConvNet directory."</h3>
+
+**NOTE:** QuickCNN is saving **class-mapping.json** and all **model\*.hdf5** in your Google-Drive, so for re-using these files in arguments like ```model``` & ```class_mapping```, you have to append **'gdrive/My Drive/[Google-Drive path]**
+
+**Do always:** If you want to train model one after another then after one training process **Runtime > Reset all runtimes...**, else it will give an error in tensorboard writing. If you inturrept the training and want to access tensorboard events then before resetting copy log folder from colab-workspace.
 
 ## :bullettrain_front: Training Mode:
 
@@ -200,6 +204,16 @@ convnet = retrain.Retrain(train_dir_name ='Food image data/train_data',
                           preserve_imagenet_classes=False, 
                           epoch=20, use_tensorboard=True, histogram_freq=0, batch_size=32)
 ```
+
+For prediction after completing any of training process. If you are working in colab then it plots images and labels.
+For ```preserve_imagenet_classes=True```, it also predict ImageNet class label.
+
+```python
+#test_data folder having mixed class images.
+convnet.predict('test_data')
+```
+
+For custom model or incomplete trained model 
 
 ## :memo: Todo
 
