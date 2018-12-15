@@ -209,7 +209,7 @@ For prediction after completing any of training process. If you are working in c
 For ```preserve_imagenet_classes=True```, it also predict ImageNet class label.
 
 ```python
-# test_data folder having mixed class images.
+# test_data folder having mixed class images OR test.jpg
 convnet.predict('test_data')
 print(convnet.results)
 ```
@@ -225,6 +225,16 @@ print(convnet.X)
 
 # Image label
 print(convnet.Y)
+```
+
+Directly predicting on model:
+
+```python
+convnet = retrain.Retrain(train_mode=False)
+
+# test_data folder having mixed class images OR test.jpg
+convnet.predict('test_data')
+print(convnet.results)
 ```
 
 ## :memo: Todo
