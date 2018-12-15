@@ -702,7 +702,7 @@ class Retrain():
 
 		self.X = np.array(X)
 		self.Y = np.array(Y)
-		if take_y_n("Do you want to train SVM on extracted features [Y/N]: ")
+		if self.take_y_n("Do you want to train SVM on extracted features [Y/N]: "):
 			self.clf = SVC()
 			self.clf.fit(self.X, self.Y)
 
