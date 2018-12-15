@@ -163,7 +163,7 @@ convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_dat
 
 #### Training Mode: :bullettrain_front:
 
-There is four case with **size** of dataset and **similarity** of pretrained model's dataset.
+There is four case with **size** of dataset and **similarity** with pretrained model's dataset.
 
 **1. Small & similar dataset:**
 
