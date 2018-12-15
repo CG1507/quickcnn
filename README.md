@@ -157,7 +157,7 @@ Create an obect of ```retrain.Retrain``` class for applying any learning process
 | **class_mapping** | • if train_mode is False and model has classes other than ImageNet, then pass class_mapping. <br> • class_mapping can be dictionary or file_path to class_mapping.json. | None |
 | **name** | • name of model | "custom_convnet" |
 
-<h3 align="center">"In colab, results are saved in Google Drive finetune ConvNet directory."</h3>
+<h3 align="center">“In colab, results are saved in Google Drive finetune ConvNet directory.”</h3>
 
 **NOTE:** QuickCNN is saving **class-mapping.json** and all **model\*.hdf5** in your Google-Drive, so for re-using these files in arguments like ```model``` & ```class_mapping```, you have to append **'gdrive/My Drive/[Google-Drive path]**
 
