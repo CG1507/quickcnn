@@ -155,10 +155,43 @@ Create an obect of ```retrain.Retrain``` class for applying any learning process
 | **class_mapping** | • if train_mode is False and model has classes other than ImageNet, then pass class_mapping. <br> • class_mapping can be dictionary or file_path to class_mapping.json. | None |
 | **name** | • name of model | "custom_convnet" |
 
+***NOTE: QuickCNN is saving class-mapping.json and all model\*.hdf5 in your Google-Drive, so for re-using these files in arguments like ```model``` & ```class_mapping```, you have to append 'gdrive/My Drive/[Google-Drive path].***
+
 ```python
 convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_data',val_dir_name = 'Food image data/val_data', preserve_imagenet_classes=False, epoch=1, dropout=0.0, dense_layer=1, use_tensorboard=True, histogram_freq=0, batch_size=32)
 ```
- 
+
+#### Training Mode: :bullettrain_front:
+
+There is four case with **size** of dataset and **similarity** of pretrained model's dataset.
+
+**1. Small & similar dataset:**
+
+```training_mode=1 in QuickCNN (Transfer Learning)```
+Train only newly added FC layer for new classes. Finetuing may lead to overfitting, because of the small size of dataset.
+
+**2. Small & dissimilar dataset:**
+
+```training_mode=3 in QuickCNN (Train SVM from Bottleneck)```
+We can not use Transfer Learning/Finetuning due to dissimilar dataset and that makes top layers learning irrelevant.
+As we know earlier layers of Deep-ConvNet architecture learns edges and blobs, which can be helpful in most of the dataset. So we train the SVM classifier from activations of earlier layers.
+
+**3. Big & similar dataset:**
+
+There is two ways for this case.
+
+- **Two-Step (Recommended)**
+  1. ```training_mode=1 in QuickCNN (Transfer Learning)``` Do transfer learning with slow learning rate(SGD) to avoid rapid changes in top layers weights.
+  2. ```training_mode=2 in QuickCNN (Finetuning) | model=<path-to-model> saved by first step.``` Apply finetuning with adaptive learning rate(Adam).
+
+- **Direct**
+  - ```training_mode=2 in QuickCNN (Finetuning)``` Apply direct finetuning with adaptive learning rate(Adam).
+
+**4. Big & dissimilar dataset:**
+
+```training_mode=4 in QuickCNN (Scratch training)```
+As we have big data, so we can perform full training, and it is useful to initialize the model with pretrained weights.
+
 ## :memo: Todo
 
 - [x] Tensorboard support.
