@@ -217,7 +217,7 @@ print(convnet.results)
 For extracting features from layer:
 
 ```python
-convnet = retrain.Retrain(train_dir_name ='Food image data/train_data',
+convnet = retrain.Retrain(train_dir_name = 'Food image data/train_data',
                           val_dir_name = 'Food image data/val_data')
 
 # Bottleneck features
