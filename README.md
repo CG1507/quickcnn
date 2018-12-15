@@ -237,6 +237,8 @@ convnet.predict('test_data')
 print(convnet.results)
 ```
 
+**NOTE:** If you pick model from given 13 model for any of the learning process with ```preserve_imagenet_classes=True```, and after you want to apply same/other learning process, then you do not need to modify your **outputs node**, because QuickCNN handles ImageNet classes with care.
+
 ## :memo: Todo
 
 - [x] Tensorboard support.
