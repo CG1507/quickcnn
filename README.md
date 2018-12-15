@@ -58,6 +58,7 @@ sudo pip3 install quickcnn
 - Visualize training and validation graphs in Tensorboard
 - Histogram, Distribution and convolutional filter images in Tensorboard
 - Prediction of images and plot images with classes.
+- Tensorboard support in Colab.
 
 ## :running: Getting started
 
@@ -157,11 +158,13 @@ Create an obect of ```retrain.Retrain``` class for applying any learning process
 
 ***NOTE: QuickCNN is saving class-mapping.json and all model\*.hdf5 in your Google-Drive, so for re-using these files in arguments like ```model``` & ```class_mapping```, you have to append 'gdrive/My Drive/[Google-Drive path].***
 
+## :octocat: Examples:
+
 ```python
 convnet = retrain.Retrain(model=None, train_dir_name ='Food image data/train_data',val_dir_name = 'Food image data/val_data', preserve_imagenet_classes=False, epoch=1, dropout=0.0, dense_layer=1, use_tensorboard=True, histogram_freq=0, batch_size=32)
 ```
 
-#### Training Mode: :bullettrain_front:
+## :bullettrain_front: Training Mode:
 
 There is four case with **size** of dataset and **similarity** with pretrained model's dataset.
 
