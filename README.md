@@ -249,7 +249,7 @@ print(convnet.results)
 - [ ] Plot tp, fp, tn, fn images with result and confidence
 - [ ] Restructure the code as per coding stanadrd. :grimacing:
 
-## :mag: Related Projects
+## :mag: My Related Projects
 
 - [ConvNet-Vis](https://github.com/CG1507/ConvNet-Vis)
 - [ConvNet-Zoo](https://github.com/CG1507/ConvNet-Zoo)
